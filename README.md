@@ -3,14 +3,20 @@
 ## Installation
 ### This is not important if you got this off LiveSplit directly
 If you are downloading this on GitHub, press the green "Code" button at the top of the page and press "Download ZIP" 
+
 Once you have downloaded it extract the zip somewhere that you will remember
+
 Once extracted go into LiveSplit right click on the LiveSplit window and click "Edit Layout"
+
 Press the + button on the side go down to "Control" and click "Scriptable Auto Splitter"
+
 Click on browse and find where you extracted the file and double click it.
 
 ## Usage
 Once downloaded you should see options (if you downloaded it directly it will be in your layout settings)
+
 Select the options according to where you want it to split, so if you do not select Park Entrance, but select Railroad Tunnel it will split at the end of Railroad Tunnel.
+
 Now you want to make sure that it is comparing against Game Time, to do this right click on your LiveSplit window, hover over "Compare Against" and select "Game Time"
 
 ## Settings
