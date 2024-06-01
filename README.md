@@ -2,7 +2,7 @@
 
 ## Installation
 ### This is not important if you got this off LiveSplit directly
-If you are downloading this on GitHub, press the green "Code" button at the top of the page and press "Download ZIP" \n
+If you are downloading this on GitHub, press the green "Code" button at the top of the page and press "Download ZIP" 
 Once you have downloaded it extract the zip somewhere that you will remember
 Once extracted go into LiveSplit right click on the LiveSplit window and click "Edit Layout"
 Press the + button on the side go down to "Control" and click "Scriptable Auto Splitter"
