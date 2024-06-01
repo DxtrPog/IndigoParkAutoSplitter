@@ -1,7 +1,7 @@
 # Indigo Park Autosplitter
 
 ## Installation
-### This is not important if you got this off LiveSplit directly (currently not possible)
+### This is not important if you got this off LiveSplit directly 
 If you are downloading this on GitHub, press the green "Code" button at the top of the page and press "Download ZIP" 
 
 Once you have downloaded it extract the zip somewhere that you will remember
