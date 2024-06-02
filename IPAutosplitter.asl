@@ -77,7 +77,7 @@ split
 
 reset
 {
-    return current.scene == "/StartScreen" && old.scene != "/CreditsCutscene" || current.scene == "/CreditsCutscene" && current.scene != old.scene || current.scene == null;
+    return current.scene == "/StartScreen" && old.scene != "/CreditsCutscene" || current.scene == null;
 }
 
 isLoading
