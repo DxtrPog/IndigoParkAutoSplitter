@@ -5,17 +5,38 @@ state("Raccoon")
     byte paused : 0x0FE22378, 0x58, 0x1C0, 0x18;
     byte moving : 0x0F919800, 0x150, 0x658, 0x20, 0x688, 0x8E0, 0x350, 0x68;
     byte cameraMovement : 0xFE250CD;
+    byte inKiosk : 0x0FE035F0, 0x30, 0xBCC;
     string40 scene: 0x0FDF3150, 0x78, 0x20, 0xAE0, 0x18;
 }
 
-init
-{
+init {
+
     vars.readyToStart = 0;
+
+    
+    if (modules.First().ModuleMemorySize == 167936) {
+        var allComponents = timer.Layout.Components;
+        // Grab the autosplitter from splits
+        if (timer.Run.AutoSplitter != null && timer.Run.AutoSplitter.Component != null) {
+            allComponents = allComponents.Append(timer.Run.AutoSplitter.Component);
+        }
+        foreach (var component in allComponents) {
+            var type = component.GetType();
+            if (type.Name == "ASLComponent") {
+                var script = type.GetProperty("Script").GetValue(component);
+                script.GetType().GetField(
+                    "_game",
+                    BindingFlags.NonPublic | BindingFlags.Instance
+                ).SetValue(script, null);
+            }
+        }
+        return;
+    }
+
 }
 
 update
 {
-    print(current.scene + ", " + old.scene);
     if(current.scene != old.scene && current.scene == "/ParkEntrance") {
         vars.readyToStart = 1;
     }
@@ -56,7 +77,7 @@ split
 
 reset
 {
-    return current.scene == "/StartScreen" && old.scene != "/CreditsCutscene";
+    return current.scene == "/StartScreen" && old.scene != "/CreditsCutscene" || current.scene == null;
 }
 
 isLoading
