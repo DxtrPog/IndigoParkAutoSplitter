@@ -62,7 +62,7 @@ startup
 
 start
 {
-    if(current.moving == 1 && vars.readyToStart == 1 || current.moving == null && vars.readyToStart == 1 || current.cameraMovement != old.cameraMovement && vars.readyToStart == 1) {
+    if(current.moving != 0 && vars.readyToStart == 1 || current.moving == null && vars.readyToStart == 1 || current.cameraMovement != old.cameraMovement && vars.readyToStart == 1) {
         vars.readyToStart = 0;
         return true;
     }
