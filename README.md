@@ -1,4 +1,4 @@
-# THIS PROJECT HAS BEEN MOVED <https://github.com/1K2C3M/IndigoParkAutoSplitter>[HERE] AND WILL BE NO LONGER MAINTAINED BY ME
+# THIS PROJECT HAS BEEN MOVED [HERE](https://github.com/1K2C3M/IndigoParkAutoSplitter) AND WILL BE NO LONGER MAINTAINED BY ME
 
 # Indigo Park Autosplitter
 
