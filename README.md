@@ -1,3 +1,5 @@
+#THIS PROJECT HAS BEEN MOVED TO https://github.com/1K2C3M/IndigoParkAutoSplitter AND WILL BE NO LONGER MAINTAINED BY ME
+
 # Indigo Park Autosplitter
 
 ## Installation
